@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function SomeForm() {
-  const [sosi, setSosi] = useState(true);
+    const [sosi, setSosi] = useState(true);
 
-  return <form>Sosi</form>;
+    const isLoading = true;
+
+    return <form>{isLoading && <div>Sosi</div>}</form>;
 }
 
 export default SomeForm;
